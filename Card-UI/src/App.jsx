@@ -11,7 +11,7 @@ const App = () => {
       tag3: "Sales Pages",
       tag4: "Slogans",
       color: "#B8E6D1",
-      tagcolor : "#7ee9b9"
+      tagcolor: "#71f1b8",
     },
     {
       title: "Graphic Design",
@@ -21,7 +21,7 @@ const App = () => {
       tag3: "Social Media",
       tag4: "Branding",
       color: "#FFD6A5",
-      tagcolor : "#f7bb71"
+      tagcolor: "#f7bb71",
     },
     {
       title: "Web Development",
@@ -31,7 +31,7 @@ const App = () => {
       tag3: "API Integration",
       tag4: "Responsive Design",
       color: "#A8DADC",
-      tagcolor : "#6bdee2"
+      tagcolor: "#6bdee2",
     },
     {
       title: "Digital Marketing",
@@ -41,7 +41,7 @@ const App = () => {
       tag3: "Email Marketing",
       tag4: "Analytics",
       color: "#F9C6C9",
-      tagcolor : "#f97c85"
+      tagcolor: "#f8868e",
     },
     {
       title: "UI/UX Design",
@@ -51,7 +51,7 @@ const App = () => {
       tag3: "User Research",
       tag4: "Figma",
       color: "#D8B4FE",
-      tagcolor : "#b572fd"
+      tagcolor: "#b572fd",
     },
     {
       title: "Video Editing",
@@ -61,7 +61,7 @@ const App = () => {
       tag3: "Motion Graphics",
       tag4: "Color Grading",
       color: "#FFE599",
-      tagcolor : "#fed559"
+      tagcolor: "#fed559",
     },
     {
       title: "Data Analysis",
@@ -71,7 +71,7 @@ const App = () => {
       tag3: "Power BI",
       tag4: "Reporting",
       color: "#CDEAC0",
-      tagcolor : "#9bef73"
+      tagcolor: "#a1ee7d",
     },
     {
       title: "Mobile App Development",
@@ -81,7 +81,7 @@ const App = () => {
       tag3: "Flutter",
       tag4: "React Native",
       color: "#C9DAF8",
-      tagcolor : "#73a4f7"
+      tagcolor: "#7ba8f5",
     },
   ];
 
@@ -94,7 +94,18 @@ const App = () => {
   return (
     <div className="parent">
       {jobOpenings.map((elem) => {
-        return <Card title={elem.title} des={elem.description} t1={elem.tag1} t2={elem.tag2} t3={elem.tag3} t4={elem.tag4} color={elem.color} tagcolor={elem.tagcolor}/>;
+        return (
+          <Card
+            title={elem.title}
+            des={elem.description}
+            t1={elem.tag1}
+            t2={elem.tag2}
+            t3={elem.tag3}
+            t4={elem.tag4}
+            color={elem.color}
+            tagcolor={elem.tagcolor}
+          />
+        );
       })}
     </div>
   );
